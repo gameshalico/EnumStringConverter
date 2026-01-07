@@ -1,0 +1,1 @@
+namespace EnumStringConverter.Tests;
