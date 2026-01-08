@@ -8,7 +8,7 @@
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 
     <PackageId>EnumStringConverter</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>gameshalico</Authors>
     <Description>A source generator that provides fast enum-to-string conversion and enumeration with support for naming convention transformations (PascalCase, camelCase, snake_case, etc.).</Description>
     <PackageTags>enum;source-generator;roslyn;converter;naming-convention;code-generation</PackageTags>
@@ -37,7 +37,7 @@
     <None Include="..\README_JP.md" Pack="true" PackagePath="\" />
     <None Include="..\LICENSE" Pack="true" PackagePath="\" />
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-    <None Include="$(OutputPath)\EnumStringConverter.Attributes.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="$(OutputPath)\EnumStringConverter.Attributes.dll" Pack="true" PackagePath="lib/netstandard2.0" Visible="false" />
   </ItemGroup>
 
   <Target Name="CopyAttributesAssembly" AfterTargets="Build">
